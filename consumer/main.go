@@ -46,7 +46,7 @@ func main() {
 		log.Printf("Received message: %s", string(msg.Subject()))
 		msg.Ack()
 
-		// add the cosumed message to database
+		// add the consumed data to database
 		addItemToDatabase(string(msg.Subject()))
 	})
 

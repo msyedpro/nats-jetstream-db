@@ -78,7 +78,7 @@ type Item struct {
 }
 
 func addItemToDatabase(itemname string) {
-	connStr := "postgres://dbuser:dbpass@localhost:5432/dbuser?sslmode=disable"
+	connStr := "postgres://dbuser:dbpass@localhost:5432/db?sslmode=disable"
 
 	db, err := sql.Open("postgres", connStr)
 

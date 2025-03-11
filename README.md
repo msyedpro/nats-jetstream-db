@@ -42,11 +42,11 @@ $  go run .\consumer\main.go
 Check that the data consumed by the Consumer has been added to the Postgres SQL database by runing Docker command and SELECT statement below:
 
 ```
-$  docker exec -ti nats-jetstream-db-database-1  psql -U dbuser -d dbuser
+$  docker exec -ti nats-jetstream-db-database-1  psql -U dbuser -d db
 psql (17.4 (Debian 17.4-1.pgdg120+2))
 Type "help" for help.
 
-dbuser=# SELECT * from item;
+db=# SELECT * from item;
 
 id |  name   |          created
 ----+---------+----------------------------
